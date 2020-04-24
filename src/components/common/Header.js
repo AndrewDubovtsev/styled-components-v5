@@ -80,6 +80,8 @@ const StyledLink = styled(Link)`
 export const Header = () => {
   const {pathname} = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  // using context which we set in App.js to change currentTheme
+  // and get its properties
   const {id, setTheme} = useContext(ThemeContext);
 
   return (
